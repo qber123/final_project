@@ -1,0 +1,80 @@
+/* === Глобальные стили проекта === */
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-brand span {
+  color: #ffcc00;
+}
+
+.nav-link {
+  color: #aaa !important;
+  transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fff !important;
+}
+
+/* === Поднавигация (жанры) === */
+.subnav {
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  z-index: 1020;
+}
+
+.subnav::-webkit-scrollbar {
+  height: 6px;
+}
+
+.subnav::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.genre-scroll {
+  gap: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.subnav-link {
+  color: #bbb;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.95rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.subnav-link:hover {
+  color: #fff;
+}
+
+.subnav-link.active {
+  color: #ffcc00;
+  border-bottom-color: #ffcc00;
+}
+
+/* === Карточки фильмов === */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* === Footer === */
+footer {
+  font-size: 0.9rem;
+  color: #777;
+}
