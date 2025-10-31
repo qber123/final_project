@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/components.css">
+        <link rel="stylesheet" href="css/profile.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+    <body class="p-3">
+        <div class="container">
+            <div class="profile-header d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="resources/Ioann.jpg" alt="Avatar" class="profile-avatar">
+                    <div class="profile-info">
+                        <h3>Ioann Pak</h3>
+                        <p>ioann.pak@gmail.com</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-warning mt-2 me-2">
+                        <i class="bi bi-pencil-fill"></i> Change theme
+                    </button>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h5>Favorite</h5>
+                <div class="row row-cols-2 row-cols-md-4 g-3 mt-2">
+                    <div class="col">
+                        <div class="card movie-card">
+                            <img src="resources/boys_over_flowers.jpg" class="card-img-top" alt="Интерстеллар">
+                            <div class="card-body movie-card-body">
+                                <h6>Boys Over Flowers</h6>
+                                <p>2009</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card movie-card">
+                            <img src="resources/my_love_from_star.jpg" class="card-img-top" alt="Начало">
+                            <div class="card-body movie-card-body">
+                                <h6>My Love from the Star</h6>
+                                <p>2014</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h5>Account Settings</h5>
+                <button class="btn btn-warning mt-2 me-2">Profile Edit</button>
+                <button class="btn btn-outline-light mt-2">Exit</button>
+            </div>
+        </div>
+        
+        <script src="scripts/profile.js"></script>
+    </body>
 </html>
