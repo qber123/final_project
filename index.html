@@ -21,8 +21,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow-sm">
     <div class="container-fluid px-4">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="img/logo.svg" alt="Кинопоиск" width="32" height="32" class="me-2">
-        <span class="fw-bold">Кинопоиск</span>
+        <!-- <img src="img/logo.svg" alt="Кинопоиск" width="32" height="32" class="me-2"> -->
+        <span class="fw-bold">ПоисКино</span>
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -37,12 +37,7 @@
           <li class="nav-item"><a class="nav-link" href="#">Мои списки</a></li>
         </ul>
 
-        <form class="d-flex me-3" role="search">
-          <input class="form-control form-control-sm me-2" type="search" placeholder="Поиск..." aria-label="Поиск">
-          <button class="btn btn-outline-light btn-sm" type="submit">Найти</button>
-        </form>
-
-        <a href="#" class="btn btn-warning btn-sm rounded-pill px-3 fw-semibold">Войти</a>
+        <a href="login.html" class="btn btn-warning btn-sm rounded-pill px-3 fw-semibold">Войти</a>
       </div>
     </div>
   </nav>
@@ -71,25 +66,68 @@
     <h1 class="mb-4">Популярное сейчас</h1>
 
     <div class="row row-cols-2 row-cols-md-4 g-4">
-      <div class="col">
+
+      <div class="col" onclick="openMovie('1 + 1', 2011, 'resources/one.jpg')">
         <div class="card bg-secondary border-0 h-100 shadow-sm">
-          <img src="https://via.placeholder.com/300x450" class="card-img-top" alt="Постер">
+          <img src="resources/one.jpg" class="card-img-top" alt="Постер">
           <div class="card-body">
             <h5 class="card-title">Фильм 1</h5>
             <p class="card-text small text-light opacity-75">2024 • Драма</p>
           </div>
         </div>
       </div>
-      <!-- Ещё карточки -->
+      
+      <div class="col" onclick="openMovie('Interstellar', 2014, 'resources/inter.jpg')">
+        <div class="card bg-secondary border-0 h-100 shadow-sm">
+          <img src="resources/inter.jpg" class="card-img-top" alt="Постер">
+          <div class="card-body">
+            <h5 class="card-title">Фильм 1</h5>
+            <p class="card-text small text-light opacity-75">2024 • Драма</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" onclick="openMovie('The Gentleman', 2019, 'resources/jent.jpg')">
+        <div class="card bg-secondary border-0 h-100 shadow-sm">
+          <img src="resources/jent.jpg" class="card-img-top" alt="Постер">
+          <div class="card-body">
+            <h5 class="card-title">Фильм 1</h5>
+            <p class="card-text small text-light opacity-75">2024 • Драма</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" onclick="openMovie('The Shawshank Redemption', 1994, 'resources/escape.jpg')">
+        <div class="card bg-secondary border-0 h-100 shadow-sm">
+          <img src="resources/escape.jpg" class="card-img-top" alt="Постер">
+          <div class="card-body">
+            <h5 class="card-title">Фильм 1</h5>
+            <p class="card-text small text-light opacity-75">2024 • Драма</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" onclick="openMovie('The Green Mile', 1999, 'resources/green.jpg')">
+        <div class="card bg-secondary border-0 h-100 shadow-sm">
+          <img src="resources/green.jpg" class="card-img-top" alt="Постер">
+          <div class="card-body">
+            <h5 class="card-title">Фильм 1</h5>
+            <p class="card-text small text-light opacity-75">2024 • Драма</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
 
   <!-- Footer -->
   <footer class="bg-black text-center py-4 mt-5 border-top border-secondary">
-    <p class="mb-0 small text-secondary">&copy; 2025 Кинопоиск-клон. Все права защищены.</p>
+    <p class="mb-0 small text-secondary">&copy; 2025 Поискино. Все права не защищены.</p>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Js script-->
+   <script src="scripts/script.js"></script>
 </body>
 </html>

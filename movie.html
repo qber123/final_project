@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Фильм</title>
+</head>
+<body>
+  <h1 id="title"></h1>
+  <p id="year"></p>
+  <img id="poster" alt="Poster" width="300">
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const title = params.get("title");
+    const year = params.get("year");
+    const poster = params.get("poster");
+
+    if (title && year && poster) {
+      document.getElementById("title").textContent = title;
+      document.getElementById("year").textContent = "Год: " + year;
+      document.getElementById("poster").src = poster;
+    } else {
+      document.body.innerHTML = "<h2>Ошибка: данные о фильме не переданы!</h2>";
+    }
+  </script>
+</body>
+</html>
