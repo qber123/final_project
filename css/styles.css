@@ -1,8 +1,20 @@
 /* === Глобальные стили проекта === */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: "Inter", "Segoe UI", sans-serif;
   background-color: #121212;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
 }
 
 a {
@@ -77,4 +89,7 @@ a {
 footer {
   font-size: 0.9rem;
   color: #777;
+  background: #333;
+  text-align: center;
+  padding: 15px;
 }
